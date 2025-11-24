@@ -31,38 +31,6 @@ npm run dev
 
 3. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-## Project Structure
-
-```
-yatri/
-├── app/
-│   ├── layout.tsx          # Root layout with Redux provider
-│   ├── page.tsx             # Main landing page
-│   └── globals.css          # Global styles
-├── components/
-│   ├── Header.tsx           # Header component
-│   ├── HeroSection.tsx      # Hero section with booking form
-│   ├── FeatureBar.tsx       # Feature bar component
-│   ├── FeatureBlocks.tsx    # Three feature blocks
-│   ├── CompanyDescription.tsx # Company description section
-│   ├── WhyYatri.tsx         # Why Yatri section
-│   ├── PricingTable.tsx     # Pricing table component
-│   └── ReduxProvider.tsx    # Redux provider wrapper
-└── store/
-    ├── store.ts             # Redux store configuration
-    ├── hooks.ts             # Typed Redux hooks
-    └── slices/
-        └── bookingSlice.ts  # Booking form state slice
-```
-
-## Technologies Used
-
-- **Next.js 14** - React framework
-- **React 18** - UI library
-- **TypeScript** - Type safety
-- **Redux Toolkit** - State management
-- **CSS3** - Custom styling
-
 ## Build for Production
 
 ```bash
