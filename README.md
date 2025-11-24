@@ -4,7 +4,7 @@ A modern, responsive landing page for YATRI CABS built with Next.js 14, TypeScri
 
 ## Features
 
-- **Next.js 14** - Latest version with App Router
+- **Next.js 16** - Latest version with App Router
 - **TypeScript** - Type-safe development
 - **Redux Toolkit** - State management for booking form
 - **Custom CSS** - Exact replica of the original design
