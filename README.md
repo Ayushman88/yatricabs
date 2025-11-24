@@ -72,6 +72,6 @@ npm start
 
 ## License
 
-This project is private and proprietary.
+2025 Ayushman Mishra. All Rights Reserved.
 
 # yatricabs
