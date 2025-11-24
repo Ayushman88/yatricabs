@@ -1,0 +1,128 @@
+.section {
+  padding: 60px 60px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: var(--font-poppins);
+  font-size: 42px;
+  font-weight: 700;
+  color: #216900;
+  text-align: center;
+  margin-bottom: 60px;
+  text-transform: uppercase;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.leftPanel, .rightPanel {
+  width: 469px;
+  height: 306px;
+  background-color: #f5f5f0;
+  border: 1px solid #585858;
+  border-radius: 16px;
+  padding: 30px;
+  opacity: 1;
+}
+
+.centerImage {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 306px;
+}
+
+.carImage {
+  width: auto;
+  height: 100%;
+  max-height: 306px;
+  object-fit: contain;
+}
+
+.bulletList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bulletItem {
+  font-family: var(--font-poppins);
+  font-size: 18px;
+  font-weight: 400;
+  color: #585858;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  position: relative;
+  line-height: 130%;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+}
+
+.bulletItem::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  font-size: 20px;
+  color: #585858;
+}
+
+.footer {
+  font-family: var(--font-poppins);
+  font-size: 30px;
+  font-weight: 400;
+  color: #666;
+  text-align: center;
+  line-height: 54px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  margin-top: 60px;
+}
+
+.footer .highlight {
+  color: #216900;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1024px) {
+  .section {
+    padding: 60px 40px;
+  }
+
+  .content {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .leftPanel, .rightPanel {
+    width: 100%;
+    height: auto;
+    min-height: 250px;
+  }
+
+  .centerImage {
+    display: none;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+  
+  .footer {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 40px 20px;
+  }
+}

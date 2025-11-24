@@ -1,0 +1,175 @@
+.section {
+  padding: 80px 60px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.leftSection {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.phoneImages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phoneImage {
+  width: 200px;
+  height: auto;
+}
+
+.appInfo {
+  flex: 1;
+}
+
+.title {
+  font-family: var(--font-poppins);
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.yatriCabs {
+  color: #216900;
+}
+
+.promoCode {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+.code {
+  font-weight: 700;
+  color: #000;
+}
+
+.downloadText {
+  font-family: var(--font-poppins);
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.storeButtons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+.storeButton {
+  width: 140px;
+  height: auto;
+  cursor: pointer;
+}
+
+.divider {
+  width: 2px;
+  height: 340px;
+  background-color: #373737;
+}
+
+.rightSection {
+  flex: 1;
+}
+
+.driverTitle {
+  font-family: var(--font-poppins);
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.driver {
+  color: #216900;
+}
+
+.driverDescription {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #333;
+  margin-bottom: 24px;
+  text-transform: capitalize;
+}
+
+.yatriRental {
+  color: #216900;
+  font-weight: 400;
+}
+
+.driverButton {
+  background-color: #216900;
+  color: #fff;
+  padding: 6px 32px;
+  border: none;
+  border-radius: 6px;
+  font-family: var(--font-poppins);
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .section {
+    padding: 60px 40px;
+  }
+
+  .container {
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .leftSection {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .rightSection {
+    text-align: center;
+    width: 100%;
+  }
+
+  .phoneImages {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 40px 20px;
+  }
+
+  .title, .driverTitle {
+    font-size: 24px;
+  }
+}

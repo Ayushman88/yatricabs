@@ -1,0 +1,58 @@
+.section {
+  padding: 60px 60px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: separate; /* Changed to separate to allow border-spacing */
+  border-spacing: 10px 0; /* Horizontal gap 10px, Vertical gap 0 */
+  margin: 0 -10px; /* Offset the outer spacing if needed, or just let it be */
+}
+
+
+
+.headerCell {
+  background-color: #4a7c35; /* Background on cell */
+  color: #fff;
+  text-transform: uppercase;
+  font-family: var(--font-poppins);
+  font-weight: 600;
+  font-size: 18px;
+  padding: 20px;
+  text-align: center;
+  /* First and last cells rounded corners if desired, or just square blocks */
+}
+
+
+
+.cell {
+  background-color: #d5f2c8; /* Background on cell */
+  padding: 20px;
+  font-family: var(--font-poppins);
+  font-size: 16px;
+  color: #333;
+  /* Add vertical spacing if rows need to be distinct blocks, but user said gaps in columns not rows */
+}
+
+.cell:first-child {
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 40px 20px;
+  }
+
+  .table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .headerCell, .cell {
+    padding: 15px;
+    font-size: 14px;
+  }
+}

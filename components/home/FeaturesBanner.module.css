@@ -1,0 +1,113 @@
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1400px;
+  height: 161px;
+  padding: 29px 60px; /* Horizontal padding kept for spacing, vertical 29px as requested */
+  background-color: #e0e0e0;
+  border-radius: 50px;
+  margin: 0 auto; /* Centered */
+  position: relative;
+  top: -80px; /* Overlap by approx half height (161px / 2) */
+  z-index: 3;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  gap: 10px;
+}
+
+.feature {
+  flex: 1;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.featureTitle {
+  font-family: var(--font-poppins);
+  font-size: 41.82px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin-bottom: 8px;
+  color: #333;
+  white-space: nowrap;
+}
+
+.featureSubtext {
+  font-family: var(--font-poppins);
+  font-size: 15px; /* Kept readable size, user didn't specify size for subtext but said Light weight */
+  font-weight: 300;
+  color: #555;
+}
+
+.divider {
+  width: 1px;
+  height: 80px;
+  background-color: #999;
+}
+
+.downloadSection {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.downloadText {
+  font-family: var(--font-lato);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 100%;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.storeButtons {
+  display: flex;
+  gap: 15px;
+}
+
+.storeImage {
+  width: 204.65px;
+  height: 79.2px;
+  cursor: pointer;
+  object-fit: contain;
+}
+
+@media (max-width: 1440px) {
+  .banner {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .banner {
+    flex-direction: column;
+    height: auto;
+    padding: 30px;
+    top: -40px;
+    gap: 30px;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .featureTitle {
+    font-size: 32px;
+  }
+  
+  .downloadText {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .storeImage {
+    width: 140px;
+    height: auto;
+  }
+  
+  .featureTitle {
+    font-size: 28px;
+  }
+}

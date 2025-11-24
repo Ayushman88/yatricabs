@@ -1,0 +1,100 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logoContainer {
+  flex: 0 0 auto;
+}
+
+.logo {
+  height: 55px;
+  width: auto;
+}
+
+.centerSection {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactImage {
+  height: 48px;
+  width: auto;
+}
+
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.navItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  color: #333;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 6px;
+}
+
+.iconImage {
+  width: 22px;
+  height: 22px;
+}
+
+.downloadIcon {
+  background-color: #D5F2C8;
+}
+
+.accountIcon {
+  background-color: #216900;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 15px 20px;
+  }
+
+  .logo {
+    height: 40px;
+  }
+
+  .centerSection {
+    display: none;
+  }
+
+  .rightSection {
+    gap: 15px;
+  }
+
+  .navItem span {
+    display: none;
+  }
+
+  .icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .iconImage {
+    width: 18px;
+    height: 18px;
+  }
+}

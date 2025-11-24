@@ -1,0 +1,73 @@
+.operationalCities {
+  width: 100%;
+  background-color: #fff;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 60px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.citiesTitle {
+  font-family: 'Lato', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  white-space: nowrap;
+}
+
+.citiesList {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.cityLink {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+  white-space: nowrap;
+}
+
+.cityLink:hover {
+  color: #216900;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .citiesList {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 30px;
+  }
+
+  .citiesTitle {
+    font-size: 18px;
+  }
+
+  .cityLink {
+    font-size: 16px;
+  }
+}
