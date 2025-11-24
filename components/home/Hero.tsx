@@ -45,7 +45,6 @@ const Hero = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    // Basic Validation
     if (!booking.from || !booking.pickupDate || !booking.pickupTime) {
       alert("Please fill in all required fields");
       return;
@@ -56,7 +55,6 @@ const Hero = () => {
       return;
     }
 
-    // Date and Time Validation
     const today = new Date();
     const pickupDate = new Date(booking.pickupDate);
     const isToday =
@@ -74,18 +72,10 @@ const Hero = () => {
         return;
       }
     }
-
-    setIsSubmitting(true);
-
-    // Simulate API call
+    setIsSubmitting(true); 
     await new Promise((resolve) => setTimeout(resolve, 1000));
-
-    // Save to localStorage
-    localStorage.setItem("bookingData", JSON.stringify(booking));
-
+    localStorage.setItem("bookingData", JSON.stringify(booking)); 
     setIsSubmitting(false);
-    
-    // Redirect to summary page
     router.push("/booking-summary");
   };
 
@@ -186,13 +176,11 @@ const Hero = () => {
 
             {booking.serviceType === "airport" && (
                <div className={styles.tripType}>
-                 {/* Airport doesn't show One Way/Round Trip in the same way */}
                </div>
             )}
           </div>
 
           <div className={styles.inputGrid}>
-            {/* Row 1, Col 1: FROM (Always) */}
             <div className={styles.inputField}>
               <label className={styles.label}>FROM</label>
               <CitySearchInput
@@ -203,7 +191,6 @@ const Hero = () => {
               />
             </div>
 
-            {/* Row 1, Col 2: TO or TRIP */}
             <div className={styles.inputField}>
               {booking.serviceType === "airport" ? (
                  <>
@@ -228,7 +215,6 @@ const Hero = () => {
               )}
             </div>
 
-            {/* Row 2, Col 1: PICKUP DATE (Always) */}
             <div className={styles.inputField}>
               <label className={styles.label}>PICKUP DATE</label>
               <input
@@ -240,7 +226,6 @@ const Hero = () => {
               />
             </div>
 
-            {/* Row 2, Col 2: RETURN DATE (Outstation) or PICKUP TIME (Local/Airport) */}
             <div className={styles.inputField}>
               {booking.serviceType === "outstation" ? (
                  <>
@@ -267,7 +252,6 @@ const Hero = () => {
               )}
             </div>
             
-            {/* Row 3, Col 1: PICKUP TIME (Only for Outstation) */}
             {booking.serviceType === "outstation" && (
                <div className={styles.inputField}>
                 <label className={styles.label}>PICKUP TIME</label>
@@ -279,7 +263,6 @@ const Hero = () => {
                 />
               </div>
             )}
-             {/* Empty div for alignment if needed for Outstation Row 3 Col 2 */}
              {booking.serviceType === "outstation" && <div className={styles.inputField}></div>}
 
           </div>
